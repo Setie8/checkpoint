@@ -4,36 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Checkpoint</title>
+    <link rel="stylesheet" href="./CSS/style.css">
 
 </head>
 <body>
     <header>
-<nav>
      <nav class="navbar">
-      <h1> <b>MY PORTFOLIO</b> </h1>
       <ul>
-        <li> <a href="#Acceuil">Acceuil</a></li>
+        <li> <a id="active" href="#Acceuil">Acceuil</a></li>
         <li> <a href="./RSS/Apropos.html">A propos de nous</a></li>
         <li> <a href="./RSS/Travail.html">Travail</a></li>
         <li> <a href="./RSS/CV.html">CV</a></li>
         <li> <a href="./RSS/Contact.html">Contact</a></li>
-      </ul>
+        <li class="connexion"> <a href="#connexion">Connexion</a></li>
+
+      </ul><br>
 </nav>
-    </header>
+</header>
 
     <main>
-<section> <!--A propos de nous-->
-  <h1>A PROPOS DE NOUS</h1>
-  <h4>
+<section class="about"> <!--A propos de nous-->
+  <h1 class="title">A PROPOS DE NOUS</h1>
+  <h3>
     Lorem ipsum dolor sit amet consectetur adipisicing elit. Est quas
     necessitatibus consequuntur magni placeat totam deserunt. At ratione et
     facilis inventore reprehenderit, vel ab voluptas! Maxime totam incidunt
     aut odit.
-  </h4>
-  <img src="./Media/image/apropos.jpg" alt="" width="1140" height="800">
+  </h3>
+  <img id="image1" src="./Media/image/apropos.jpg" alt="" width="1350" height="900">
 </section>
 
-<section><!--CV-->
+<section class="CV"><!--CV-->
   <h1>CURRICULUM VITAE</h1>
   <h3>
     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, ab
@@ -41,10 +42,10 @@
     alias veniam voluptatibus placeat omnis doloribus. Est dignissimos minus
     voluptatum!
   </h3>
-  <video src="./Media/video/video.mp4" muted controls width="800" height="500" autoplay></video>
-</section> <br>
+  <video src="./Media/video/video.mp4" muted width="1340" height="800" autoplay class="VOD" loop></video>
+</section>
 
-<section><!--Travail-->
+<section class="work"><!--Travail-->
   <h1>TRAVAIL</h1>
   <h3>
     Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis quod
@@ -52,32 +53,34 @@
     eum tenetur unde exercitationem fuga nihil blanditiis tempore, iste
     labore?
   </h3>
- 
+  <iframe width="960" height="515"  src="https://www.youtube.com/embed/6uCpiXx4yMI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  
 
 </section>
 
-<section> <!--contact-->
+<section class="contact"> <!--contact-->
   <h1>CONTACT</h1>
   <form action="./index.html">
-  <label for="Nom">Nom</label>
+  <label for="Nom">Nom</label><br>
   <input type="text" id="Nom" placeholder="Entrez votre nom" required> <br>
   
-  <label for="Prénom">Prénom</label>
+  <label for="Prénom">Prénom</label><br>
   <input type="text" id="Prénom" placeholder="Entrez votre prénom" required> <br>
 
-  <label for="email">E-mail</label>
+  <label for="email">E-mail</label><br>
   <input type="email" id="email" placeholder="Entrez votre Adresse E-mail" required> <br>
 
-  <label for="objet">Objet</label>
+  <label for="objet">Objet</label><br>
   <input type="text" id="objet" placeholder="Entrez l'objet de votre message" > <br>
 
-  <textarea name="message" id="message" cols="30" rows="10" placeholder="Entrez votre message" required></textarea><br>
+  <textarea class="field" name="message" id="message" cols="30" rows="10" placeholder="Entrez votre message" required></textarea><br>
   <button type="submit"> valider</button>
-</section>
+</section><br>
     </main>
     
-    <footer>
+    <footer class="footer">
 
+<div>
 <h3>NOS SERVICE</h3>
 <ul>
   <li> <a href="#hebergement">Hébergement</a></li>
@@ -86,6 +89,47 @@
   <li> <a href="#Asavoir">A savoir</a></li>
 </ul>
 </div>
+
+<div>
+  <h3>NOS SERVICE</h3>
+  <ul>
+    <li> <a href="#hebergement">Hébergement</a></li>
+    <li> <a href="#Apropos">Apropos de nous</a></li>
+    <li> <a href="#contact">contactt</a></li>
+    <li> <a href="#Asavoir">A savoir</a></li>
+</ul>
+  </div>
+
+  <div>
+    <h3>NOS SERVICE</h3>
+    <ul>
+      <li> <a href="#hebergement">Hébergement</a></li>
+      <li> <a href="#Apropos">Apropos de nous</a></li>
+      <li> <a href="#contact">contactt</a></li>
+      <li> <a href="#Asavoir">A savoir</a></li>
+    </ul>
+  </div>
+
+    <div>
+      <h3>NOS SERVICE</h3>
+      <ul>
+        <li> <a href="#hebergement">Hébergement</a></li>
+        <li> <a href="#Apropos">Apropos de nous</a></li>
+        <li> <a href="#contact">contactt</a></li>
+        <li> <a href="#Asavoir">A savoir</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h3>NOS SERVICE</h3>
+      <ul>
+        <li> <a href="#hebergement">Hébergement</a></li>
+        <li> <a href="#Apropos">Apropos de nous</a></li>
+        <li> <a href="#contact">contactt</a></li>
+        <li> <a href="#Asavoir">A savoir</a></li>
+      </ul>
+    </div>
+
     </footer>
 </body>
 </html>
