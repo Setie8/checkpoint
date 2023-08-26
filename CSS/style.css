@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,200&family=Exo+2:wght@300&family=Josefin+Sans:wght@500&family=Lobster&family=Pacifico&family=Roboto:ital,wght@0,300;1,100&family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300&family=Exo:wght@700&display=swap');
 
 *{
   margin: 0;
@@ -7,81 +7,239 @@
   top: 0;
   box-sizing: border-box;
 }
+a{
+  text-decoration: none;
+}
+hr{
+  border: 1px solid rgb(255, 255, 255);
+}
 
 header{
   background-color: #344D59; 
-  padding-bottom: 24px;
+  height: 69px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.253);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 9999;
 }
 
-.navbar ul li a{
+.navbar{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.navbar .navbar-logo{
+display: flex;
+width: 10%;
+height: 100%;
+justify-content: flex-start;
+align-items: center;
+& img{
+  width: 70px;
+}
+}
+
+#menu-icon{
+  display: none;
+  
+}
+
+.navbar .navbar-links{
+  display: flex;
+  width: 80%;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.navbar .navbar-links ul li{
+
+}
+
+.navbar .navbar-button{
+  display: flex;
+  justify-content:flex-end;
+  align-items: center;
+  width: 10%;
+  height: 100%;
+}
+
+.navbar .navbar-button a{
+  color: white;
+  background-color: #137C8B;
+  padding: 1.5rem;
+  font-family: 'Exo 2', sans-serif;
+  width: 100%;
+  
+}
+
+.navbar .navbar-links ul li a{
   text-decoration: none;
   color: white;
   font-size: 20px;
-  padding: 13px;
-
+  padding: 1.4rem;
+  font-family: 'Exo 2', sans-serif;
 }
 
-.navbar ul li{
+.navbar .navbar-links ul li{
   display: inline;
   float: left;
-  margin-top: 7px;
 
 }
 
-.navbar ul li a:hover{
+.navbar .navbar-links ul li a:hover{
   background-color: #1c2b31;
- 
-}
-
-header .navbar .connexion{
-  margin-left: 756px;
-
+ width: 100%;
 }
 
 #active{
   background-color: #137C8B;
+  width: 100%;
 }
 
-
 .about h3{
-  margin-top: 20px;
-  text-align: center;
-  font-size: 18px;
+  margin-top: 80px;
+  font-size: 20px;
   font-family: 'Exo 2', sans-serif;
+}
+
+.about h3 input{
+  display: flex;
+  margin-top: 30px;
+
 }
 
 .about h1{
-  font-weight: bolder;
-  text-align: center;
+  display: flex;
+  margin-top: 120px;
+  width: 100%;
   font-family: 'Exo 2', sans-serif;
-  margin-top: 20px;
+  font-size: 70px;
+  justify-content: center;
 }
 
-.CV h1{ 
-  font-weight: bolder;
-  text-align: center;
+.left {
+  margin-top: 50px;
+  float: left;
+  width: 50%;
+  padding: 15px;
+  margin-bottom: 100px;
+  
+}
+.about img{
+ display: flex;
+}
+ .about input{
+  border: none;
+  margin-bottom: 10px;
+  width: 80%;
+  height: 40px;
+  padding-left: 10px;
+  background-color: #dbdada;
+  border-radius: 5px;
+  font-size: 15px;
   font-family: 'Exo 2', sans-serif;
-  margin-top: 20px;
+ }
+
+
+.CV h1{ 
+  text-align: center;
+  font-size: 50px;
+  font-family: 'Exo 2', sans-serif;
+  background-color: #137C8B;
+  color: white;
+  margin-top: 69px;
+
 }
 
 .CV h3{
-  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
   text-align: center;
   font-size: 18px;
   font-family: 'Exo 2', sans-serif;
+  padding: 60px;
+  padding-bottom: 90px;
 }
 
-.work h1{ 
-  font-weight: bolder;
+#colu button{
+  width: 50%;
+  height: 50px;
+  font-size: 20px;
   font-family: 'Exo 2', sans-serif;
-  margin-top: 20px;
+  font-weight: bolder;
+  border: none;
+  border-radius: 10px;
+  background-color: #042b31;
+  color: white;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  margin-top: 10px;
+  margin-left: 130px;
+  
+}
+
+.CV video{
+  display: flex;
+  width: 100%;
+  margin-top: 30px;
+}
+#colu{
+  float: left;
+  width: 50%;
+  margin-top: 70px;
+  margin-bottom: 50px;
+  
+}
+#column{
+  display: flex;
+  width: 33%;
+  float: left;
+  justify-content: space-between;
+  padding: 30px;
+  padding-left: 10px;
+  padding-right: 20px;
+ border: 1px solid rgba(128, 128, 128, 0.616);
+ border-radius: 15px;
+ margin-left: 3.9px;
+ 
+}
+#column button{
+  width: 50%;
+  height: 50px;
+  font-size: 20px;
+  font-family: 'Exo 2', sans-serif;
+  font-weight: bolder;
+  border: none;
+  border-radius: 10px;
+  background-color: #042b31;
+  color: white;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  margin-top: 10px;
+  margin-left: 100px;
+}
+
+
+.work h1{ 
+  margin-top: 69px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 50px;
+  font-family: 'Exo 2', sans-serif;
+  background-color: #137C8B;
+  color: white;
 }
 
 .work h3{
   margin-top: 20px;
-  margin-bottom: 20px;
   font-size: 18px;
   font-family: 'Exo 2', sans-serif;
+  text-align: center;
+  padding: 70px;
 }
 .work{
   text-align: center;
@@ -89,6 +247,28 @@ header .navbar .connexion{
 
 .work iframe{
   margin-bottom: 20px;
+  width: 33.33%;
+  height: 350px;
+}
+
+.wewo{
+  float: left;
+  width: 33.33%;
+  margin-top: 50px;
+  margin-bottom: 70px;
+}
+.work button{
+  width: 50%;
+  height: 50px;
+  font-size: 20px;
+  font-family: 'Exo 2', sans-serif;
+  font-weight: bolder;
+  border: none;
+  border-radius: 10px;
+  background-color: #042b31;
+  color: white;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  margin-top: 10px;
 }
 
 
@@ -101,15 +281,17 @@ header .navbar .connexion{
 
 .contact h1{
   margin-bottom: 20px;
-  font-size: 20px;
+  font-size: 50px;
   font-weight: bolder;
   text-align: center;
   font-family: 'Exo 2', sans-serif;
-  margin-top: 20px;
+  margin-top: 80px;
+  
+
 }
 
 
-input{
+.contact input{
   border: none;
   margin-bottom: 10px;
   width: 50%;
@@ -135,7 +317,7 @@ font-family: 'Exo 2', sans-serif;
 font-weight: bolder;
 }
 
-button{
+.contact button{
   width: 8%;
   height: 50px;
   font-size: 20px;
@@ -147,18 +329,16 @@ button{
   color: white;
   margin-top: 20px;
   margin-bottom: 20px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
   
 }
 
-img{
-  margin-top: 20px;
-}
 
 footer{
   background-color: #1c2b31;
 }
 
-div{
+footer div{
   display: inline-block;
   padding: 50px;
   color: white;
@@ -167,24 +347,84 @@ div{
 
 }
 
-div ul li a{
+footer  ul li a{
   color: white;
   text-decoration: none;
   font-size: 20px;
   font-family: 'Exo 2', sans-serif;
 }
 
-div ul{
+footer div ul{
   list-style-type: none;
 }
 
-div h3{
+ footer div h3{
   margin-bottom: 20px;
 }
 
-div ul li a:hover{
+footer div ul li a:hover{
   color: #137C8B;
 }
 
+@media screen and (max-width:600px){
+  #menu-icon{
+    display: block;
+    font-size: 2rem;
+    color: white;
+    margin-right: 0.2rem;
+  }
+    .navbar .navbar-logo{
+      width: 100%;
+      display: flex;
+      justify-content: start;
+    }
+    .navbar .navbar-links{
+      position: absolute;
+      top: -500%;
+    }
 
+    .navbar .navbar-button{
+      position: absolute;
+      top: -500%;
+    }
+    
+.navbar-links.active{
+  top: 100%;
+  width: 100%;
+  background-color: #137C8B;
+ height: 300px;
+
+}
+
+.navbar .navbar-links ul li a{
+  padding: 0rem;
+}
+
+.navbar .navbar-links ul{
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+}
+
+.navbar .navbar-links ul li{
+  margin-top: 10px;
+}
+
+.navbar .navbar-links ul li a:hover{
+  background-color: #1c2b31;
+ width: 100%;
+}
+
+.navbar-links ul{
+  padding: 0;
+}
+
+.navbar-button.active{
+  top: 200%;
+  width: 100%;
+}
+
+
+  
+}
 
